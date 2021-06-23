@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13paskaita</title>
+    <style>
+        .container {
+            height: 300px;
+            width: 100%;
+            margin-right: 100px;
+            margin-left: 100px;
+            background-color: tomato;
+            position: relative;
+            top: 50px;
+        }
+        .kvadratai {
+            width: 900px;
+            background-color: violet;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%,50%)
+        }
+        .kvadratas {
+            width: 33.33%;
+            height: 400px;
+            float: left;
+        }
+        .raudona {
+            background-color: red;
+        }
+        .zalia {
+            background-color: greenyellow;
+        }
+        .geltona {
+            background-color: yellow;
+        }
+        .menu {
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            background-color: thistle;
+        }
+        ul {
+           list-style: none; 
+           display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='menu'>
+            <ul>tekstas</ul>
+            <ul>tekstas</ul>
+            <ul>tekstas</ul>
+        </div>
+        <div class='kvadratai'>
+            <div class='kvadratas geltona'>tekstas</div>
+            <div class='kvadratas zalia'>tekstas</div>
+            <div class='kvadratas raudona'>tekstas</div>
+        </div>
+    </div>
+    <!-- <div class='container-1'>tekstas</div>
+    <div class='kvadratas'>tekstas</div> -->
+</body>
+</html>

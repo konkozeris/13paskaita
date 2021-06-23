@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11paskaita</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-size: 10px;
+            height: 100%;
+        }
+        body {
+            margin: 0 auto;
+            min-height: 100%;
+            max-width: 1920px;
+            background-color:rgb(23, 128, 67);
+        }
+        .container {
+            font-family:'Nanum Gothic', sans-serif;
+            width: 42.05%;
+            margin: 0 auto;
+            position: absolute;
+            background-color: rgb(23, 128, 67);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+        }
+        .left-column, .right-column {
+            float: left;
+            height: 48.4rem;
+        }
+        .left-column {
+            width: 40%;
+            background-color: transparent;
+        }
+        .right-column {
+            width: 60%;
+            background-color: blanchedalmond
+        }
+        .left-column-container {
+            height: 36.4rem;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+            margin-left: 2rem;
+            background-image: url('https://images.unsplash.com/photo-1542461927-dd68c85adc56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60');
+            background-size: cover;
+            padding-left: 4rem;
+        }
+        h1 {
+            font: 1.6rem;
+            margin:0;
+            padding-top: 3.2rem;
+        }
+        .left-column-container a {
+            font-size: 1rem;
+            color: white;
+        }
+        .links {
+            position: absolute;
+            color: white;
+            bottom: 2.5rem;
+
+        }
+        .links a, .links p {
+            display: inline-block;
+            font-weight: 800;
+            padding-bottom: 5rem;
+        }
+        .right-column-container {
+            padding-left: 4rem;
+            padding-top: 4.5rem;
+            padding-right: 4rem;
+        }
+        input {
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid gray;
+            background-color: blanchedalmond;
+            font-size: 1.2rem;
+            padding-bottom: 0.5rem;
+        }
+        label {
+            font-size: 1.3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .input {
+            margin-bottom: 3.4rem;
+
+        }
+        ::-webkit-input-placeholder {
+            color: gray;
+        }
+        input:focus {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;
+        }
+        .close {
+            font-size: 2rem;
+            position: absolute;
+            top: 1.4rem;
+            right: 2.3rem;
+        }
+        .close:hover {
+            cursor: pointer;
+            color: grey;
+        }
+        .right-column-container-bottom a, .right-column-container-bottom p, .btn {
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+        .btn {
+            border: none;
+            background-color: honeydew;
+            padding-left: 4rem;
+            padding-top: 1rem;
+            padding-right: 4rem;
+            padding-bottom: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 3px 8px goldenrod;
+            color: gray;
+        }
+        .btn:hover{
+            cursor: pointer;
+            box-shadow: 0 4px 8px gold;
+            color: darkgreen
+        }
+        .right-column-container-bottom a {
+            padding-left: 2rem;
+            font-weight: 700;
+        }
+        .right-column-container-bottom p {
+            padding-left: 1.4rem;
+            font-weight: 700;
+        }
+        @media screen and (max-width: 1250px) {
+            .btn {
+                width: 100%;
+            }
+            .container {
+                width: 57.05%;
+            }
+            .right-column-container-bottom p, .right-column-container-bottom a {
+                width: 45%;
+                padding: 0;
+            } 
+            .right-column-container-bottom p {
+                text-align: right;
+                padding-right: 1rem;
+            }
+            .links {
+                top: 30rem;
+            }
+        }
+        @media screen and (max-width:910px) {
+            .right-column, .left-column {
+                width: 100%;
+            }
+            .left-column {
+                height: 20rem;
+                padding: 0%;
+            }
+            .left-column-container {
+                margin: 0
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='left-column'>
+            <div class='left-column-container'>
+                <h1>Sign up</h1>
+
+                <div class='links'>
+                    <a href='#'> privacy policy</a>
+                    <p>&</p>
+                    <a href='#'>terms of service</a>
+                </div>
+            </div>
+        </div>
+        <div class='right-column'>
+            <div class='right-column-container'>
+                <div class='close'>
+                <span>x</span>
+                </div>
+                <div class="input">
+                    <label for='username'>username</label>
+                    <input placeholder="enter your username" type="text" id='username' name='username'>
+                </div>
+                <div class="input">
+                    <label for='email'>email</label>
+                    <input placeholder="enter your email" type="text" id='email' name='email'>
+                </div>
+                <div class="input">
+                    <label for='password'>password</label>
+                    <input placeholder="enter your password" type="text" id='password' name='password'>
+                </div>
+                <div class="input">
+                    <label for='repeat-password'>repeat your password</label>
+                    <input placeholder="enter your password again" type="text" id='repeat-password' name='repeat-password'>
+                </div>
+                <div class="right-column-container-bottom">
+                    <button class='btn'> get started!</button>
+                    <p>or</p>
+                    <a href="#">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
